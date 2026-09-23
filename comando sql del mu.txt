@@ -1,0 +1,40 @@
+para niveles:
+
+UPDATE Character
+SET cLevel = 400
+WHERE Name = 'NombreDeTuPJ';
+
+para reset:
+
+UPDATE Character
+SET ResetCount = 195
+WHERE Name = 'NombreDeTuPJ'
+UPDATE Character
+SET MasterResetCount = 2
+WHERE Name = 'NombreDeTuPJ';
+
+para crear items en el server:
+
+Ejemplo: /make 0 1 15 1 1 7 63
+
+para el logo del Mu :
+
+USE [MuOnline]
+GO
+
+UPDATE [Character]
+SET [CtlCode] = 32
+WHERE [Name] = 'NombreDeTuPJ'
+GO
+
+Formla de itemindex
+
+(categoria x 512) + index = itemindex
+
+Codigo /make de cajas kundum
+
+/make 14 11 8 0 0 0 0 = +1
+/make 14 11 9 0 0 0 0 = +2
+/make 14 11 10 0 0 0 0 = +3
+/make 14 11 11 0 0 0 0 = +4
+/make 14 11 12 0 0 0 0 = +5
